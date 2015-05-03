@@ -4,7 +4,7 @@ return [
 
 	'default' => [
 		'uri' => '(<controller>(/<action>(/<id>)))',
-		'defaults' => array[
+		'defaults' => [
 			'controller' => 'welcome',
 			'action'     => 'index',
 		],
