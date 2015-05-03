@@ -2,7 +2,6 @@
     "name": "guss77/kohana-routing",
     "type": "kohana-module",
     "description": "Kohana >= 3.3 module for setting up routes through a configuration file",
-    "version": "1.0.0",
     "homepage": "https://github.com/guss77/kohana-routing",
     "license": "BSD-3-Clause",
     "keywords": ["kohana", "routing", "configuration"],
