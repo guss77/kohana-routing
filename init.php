@@ -6,6 +6,7 @@
  */
 foreach (Kohana::$config->load('routes')->as_array() as $route) {
 	foreach ($route as $name => $params) {
+		error_log("Setting route $name");
 		$r = Route::set($name, $params['uri'], @$params['rules']);
 		if (@$params['defaults'])
 			$r->defaults($params['defaults']);
