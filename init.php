@@ -17,7 +17,7 @@ while (count($files) > 1) {
 }
 
 foreach (Kohana::load(array_shift($files)) as $name => $params) {
-	$r = Route::set($name, $params['uri'], @$params['rules']);
+	$r = Route::set($name, $params['uri'], array_key_exists('rules', $params) ? $params['rules'] : null);
 	if (@$params['defaults'])
 		$r->defaults($params['defaults']);
 }
